@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots AnswerButton Default 1`] = `
+<button
+  className="answer-button"
+>
+  1번 선택지입니다.
+</button>
+`;
+
+exports[`Storyshots AnswerButtonList Default 1`] = `
+<div
+  className="answer-button-list"
+>
+  <button
+    className="answer-button"
+  >
+    1번 선택지입니다.
+  </button>
+  <button
+    className="answer-button"
+  >
+    2번 선택지입니다.
+  </button>
+</div>
+`;
+
+exports[`Storyshots AnswerButtonList Empty 1`] = `
+<div
+  className="answer-button-list"
+>
+  <h3
+    className="error title"
+  >
+    죄송합니다.
+  </h3>
+  <span
+    className="error"
+  >
+    내용을 불러오는데 실패했습니다.
+  </span>
+  <span
+    className="error"
+  >
+    테스트를 다시 진행해주세요.
+  </span>
+</div>
+`;
+
 exports[`Storyshots InboxScreen Default 1`] = `
 <div
   className="page lists-show"

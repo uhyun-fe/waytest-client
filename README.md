@@ -18,6 +18,7 @@ waytest는 "who are you test"입니다.
 ## Storybook
 
 waytest-storybook https://www.chromatic.com/library?appId=60ffba1633991c0039ce5588
+https://60ffba1633991c0039ce5588-ofomuakpwv.chromatic.com/
 
 참고 문서 : https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
 

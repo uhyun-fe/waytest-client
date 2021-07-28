@@ -25,28 +25,6 @@ exports[`Storyshots AnswerButtonList Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots AnswerButtonList Empty 1`] = `
-<div
-  className="answer-button-list"
->
-  <h3
-    className="error title"
-  >
-    죄송합니다.
-  </h3>
-  <span
-    className="error"
-  >
-    내용을 불러오는데 실패했습니다.
-  </span>
-  <span
-    className="error"
-  >
-    테스트를 다시 진행해주세요.
-  </span>
-</div>
-`;
-
 exports[`Storyshots InboxScreen Default 1`] = `
 <div
   className="page lists-show"
@@ -330,6 +308,23 @@ exports[`Storyshots InboxScreen Error 1`] = `
       Something went wrong
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots QuestHeader Default 1`] = `
+<div
+  className="quest-header"
+>
+  <h3>
+    Q
+    1
+    .
+  </h3>
+  <span>
+    1
+    /
+    10
+  </span>
 </div>
 `;
 

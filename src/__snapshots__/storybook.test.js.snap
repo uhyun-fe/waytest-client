@@ -311,6 +311,100 @@ exports[`Storyshots InboxScreen Error 1`] = `
 </div>
 `;
 
+exports[`Storyshots QuestBox Default 1`] = `
+<div
+  className="quest-box"
+>
+  <div
+    className="quest-header"
+  >
+    <h3>
+      Q
+      1
+      .
+    </h3>
+    <span>
+      1
+      /
+      10
+    </span>
+  </div>
+  <div
+    className="quest-content"
+  >
+    <p>
+      첫번째 질문입니다.
+    </p>
+    <img
+      alt="quest_image"
+      src="sample_icon1.png"
+    />
+  </div>
+  <div
+    className="answer-button-list"
+  >
+    <button
+      className="answer-button"
+    >
+      1번 선택지입니다.
+    </button>
+    <button
+      className="answer-button"
+    >
+      2번 선택지입니다.
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots QuestBox Error 1`] = `
+<div
+  className="error-box"
+>
+  <img
+    alt="error"
+    src="warning.png"
+  />
+  <h3>
+    죄송합니다
+  </h3>
+  <p>
+    "Error Message"
+  </p>
+  <p>
+    테스트를 다시 진행해주세요.
+  </p>
+</div>
+`;
+
+exports[`Storyshots QuestBox Loading 1`] = `
+<div
+  className="loading-box"
+>
+  <img
+    alt="loading"
+    src="loading.png"
+  />
+  <h3>
+    로딩중...
+  </h3>
+</div>
+`;
+
+exports[`Storyshots QuestContent Default 1`] = `
+<div
+  className="quest-content"
+>
+  <p>
+    첫번째 질문입니다.
+  </p>
+  <img
+    alt="quest_image"
+    src="sample_icon1.png"
+  />
+</div>
+`;
+
 exports[`Storyshots QuestHeader Default 1`] = `
 <div
   className="quest-header"

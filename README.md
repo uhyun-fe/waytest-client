@@ -1,6 +1,10 @@
 # WayTest Client
 
+https://waytest.netlify.app/
+
 waytest는 "who are you test"입니다.
+
+배포 : netlify 사용
 
 ---
 

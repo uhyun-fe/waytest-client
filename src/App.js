@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import QuestBox from "./components/Quest/QuestBox/QuestBox";
+import StartPage from "./components/StartPage/StartPage";
 
 function App() {
    // const todos = [
@@ -37,15 +38,10 @@ function App() {
       },
    ];
 
-   const [answer, setAnswer] = useState([]);
+   const [answer, setAnswer] = useState(false);
    const [nowQuest, setNowQuest] = useState(false);
    const [nowCount, setNowCount] = useState(0);
    const [isPassing, setIsPassing] = useState(false);
-
-   useEffect(() => {
-      setAnswer([...Array(10)].map((n, i) => i + 1));
-      setNowQuest({ quest: data[nowCount], total: data.length });
-   }, []);
 
    useEffect(() => {
       if (nowCount > 0) {
@@ -62,16 +58,24 @@ function App() {
       }
    }, [isPassing]);
 
+   function start() {
+      setAnswer([...Array(10)].map((n, i) => i + 1));
+      setNowQuest({ quest: data[nowCount], total: data.length });
+      setIsPassing(true);
+   }
+
    function setOneAnswer({ id, value }) {
       setAnswer(answer.map((a, i) => (i === id ? value : a)));
       setNowCount(nowCount + 1);
    }
 
+   console.log(answer);
    return (
       <div className="App">
          <ul className="quest-box-ul">
             <li className="quest-box-li">
                <div className={`pass-box ${isPassing ? "display" : "none"}`} />
+               {!answer && <StartPage start={start} />}
                {nowQuest && <QuestBox answer={setOneAnswer} {...nowQuest} />}
             </li>
          </ul>

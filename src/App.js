@@ -1,92 +1,56 @@
-import React, { useEffect, useState } from "react";
-import QuestBox from "./components/Quest/QuestBox/QuestBox";
-import StartPage from "./components/StartPage/StartPage";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+
+import GlobalStyles from "./global/styles";
+import { Intro, Quest } from "./routes";
 
 function App() {
-   // const todos = [
-   //    { id: 1, title: "할일 111", completed: true },
-   //    { id: 2, title: "할일 222", completed: false },
-   // ];
-
-   const data = [
-      {
-         id: 1,
-         text: "hello",
-         image_url: "",
-         items: [
-            { id: 1, title: "1번 질문", value: 0 },
-            { id: 2, title: "2번 질문", value: 1 },
-         ],
-      },
-      {
-         id: 2,
-         text: "bye",
-         image_url: "",
-         items: [
-            { id: 1, title: "안녕", value: 0 },
-            { id: 2, title: "하세여", value: 1 },
-         ],
-      },
-      {
-         id: 3,
-         text: "re hi",
-         image_url: "",
-         items: [
-            { id: 1, title: "룰루", value: 0 },
-            { id: 2, title: "랄라", value: 1 },
-         ],
-      },
-   ];
-
-   const [answer, setAnswer] = useState(false);
-   const [nowQuest, setNowQuest] = useState(false);
-   const [nowCount, setNowCount] = useState(0);
-   const [isPassing, setIsPassing] = useState(false);
-
-   useEffect(() => {
-      if (nowCount > 0) {
-         setIsPassing(true);
-      }
-   }, [nowCount]);
-
-   useEffect(() => {
-      if (isPassing) {
-         setTimeout(() => {
-            setIsPassing(false);
-            setNowQuest({ ...nowQuest, quest: data[nowCount] });
-         }, 1000);
-      }
-   }, [isPassing]);
-
-   function start() {
-      setAnswer([...Array(10)].map((n, i) => i + 1));
-      setNowQuest({ quest: data[nowCount], total: data.length });
-      setIsPassing(true);
-   }
-
-   function setOneAnswer({ id, value }) {
-      setAnswer(answer.map((a, i) => (i === id ? value : a)));
-      setNowCount(nowCount + 1);
-   }
-
-   console.log(answer);
    return (
-      <div className="App">
-         <ul className="quest-box-ul">
-            <li className="quest-box-li">
-               <div className={`pass-box ${isPassing ? "display" : "none"}`} />
-               {!answer && <StartPage start={start} />}
-               {nowQuest && <QuestBox answer={setOneAnswer} {...nowQuest} />}
-            </li>
-         </ul>
-         {/* {todos.map((t) => (
-            <Todo todo={t} />
-         ))} */}
-         {/* <Provider store={store}>
-            <InboxScreen />
-         </Provider> */}
-      </div>
+      <>
+         <GlobalStyles />
+         <Router>
+            <main>
+               <Switch>
+                  <Route path="/intro" render={(props) => <Intro {...props} />} />
+                  <Route path="/test" render={(props) => <Quest {...props} />} />
+                  <Redirect from="*" to="/intro" />
+               </Switch>
+            </main>
+         </Router>
+      </>
    );
 }
 
 export default App;
+
+// useEffect(() => {
+//    if (nowCount > 0) {
+//       setIsPassing(true);
+//    }
+// }, [nowCount]);
+
+// useEffect(() => {
+//    if (isPassing) {
+//       setTimeout(() => {
+//          setIsPassing(false);
+//          setNowQuest({ ...nowQuest, quest: data[nowCount] });
+//       }, 1000);
+//    }
+// }, [isPassing]);
+
+// function start() {
+//    setAnswer([...Array(10)].map((n, i) => i + 1));
+//    setNowQuest({ quest: data[nowCount], total: data.length });
+// }
+
+// function setOneAnswer({ id, value }) {
+//    setAnswer(answer.map((a, i) => (i === id ? value : a)));
+//    setNowCount(nowCount + 1);
+// }
+
+/* <ul className="quest-box-ul">
+            <li className="quest-box-li">
+               <div className={`pass-box ${isPassing ? "display" : "none"}`} />
+               {!answer ? <StartPage start={start} /> : <QuestBox answer={setOneAnswer} {...nowQuest} />}
+            </li>
+         </ul> */

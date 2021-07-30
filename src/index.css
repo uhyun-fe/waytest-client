@@ -269,7 +269,15 @@ h6 {
    min-width: 320px;
 }
 
+/* start page */
+
+.start-page {
+   width: 100%;
+   background: lightblue;
+}
+
 /* component style */
+
 .answer-button {
    width: 90%;
    height: 130px;

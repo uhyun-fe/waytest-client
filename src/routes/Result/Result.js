@@ -1,7 +1,13 @@
 import React from "react";
 
+import ResultTitle from "../../components/Result/ResultTitle";
+
 const Result = () => {
-   return <div>결과는? 두둥</div>;
+   return (
+      <div>
+         <ResultTitle title={"이런 유형!"} />
+      </div>
+   );
 };
 
 export default Result;

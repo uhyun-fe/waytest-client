@@ -4,26 +4,30 @@ https://waytest.netlify.app/
 
 waytest는 "who are you test"입니다.
 
-배포 : netlify 사용
+-  배포 : netlify https://velog.io/@feyouhyun0957/react-netlify-%EB%B0%B0%ED%8F%AC
 
 ---
 
 ## Component
 
-1. Quest
-   -  QuestBox : 선택 전체 화면
-   -  QuestHeader : page count (Q1 + 1/10)
-   -  QuestContent : 검사문항 (글 + 그림)
-   -  AnswerButton : 선택 버튼
-   -  AnswerButtonList : 선택 버튼 리스트 (2개)
+1. Intro
+
+   -  IntroPage : 메인 시작화면
+
+2. Quest
+
+   -  QuestTitle : 질문별 질문제목 영역
+   -  AnswerBox : 질문별 답안선택 영역
+   -  ProgressBar : 테스트 진행상황 표시 영역
+
+3. Result
+   -  ResultTitle : 결과 유형 타이틀 영역
 
 ---
 
 ## Storybook
 
 waytest-storybook https://www.chromatic.com/library?appId=60ffba1633991c0039ce5588
-
-참고 문서 : https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
 
 @storybook/addon-storyshots 설치 시 명령문
 
@@ -37,11 +41,14 @@ storybook build 시 명령문
 npx chromatic --project-token <your-project-token>
 ```
 
+참고 문서 : https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
+
 ---
 
 ## TEST 코드
 
 React Testing with JEST
+
 참고 튜토리얼 : https://www.youtube.com/watch?v=ML5egqL3YFE&t=162s
 
 ---

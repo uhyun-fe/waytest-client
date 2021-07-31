@@ -7,7 +7,7 @@ const ProgressBar = ({ id, total }) => {
       <View>
          <span className="text">{`${id}/${total}`}</span>
          <div className="bar-box">
-            <div className="bar" style={{ width: id * 10 + "%" }} />
+            <div className="bar" style={{ width: (100 / total) * id + "%" }} />
          </div>
       </View>
    );

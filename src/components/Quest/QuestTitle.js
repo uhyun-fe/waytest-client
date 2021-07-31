@@ -7,11 +7,11 @@ const QuestTitle = ({ id, title }) => {
       <View>
          <p>Q{id}</p>
          <h2>
-            {title.split("\n").map((t) => (
-               <>
+            {title.split("\n").map((t, i) => (
+               <span key={i}>
                   {t}
                   <br />
-               </>
+               </span>
             ))}
          </h2>
       </View>

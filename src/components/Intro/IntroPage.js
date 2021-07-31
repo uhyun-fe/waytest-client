@@ -37,6 +37,7 @@ const View = styled.div`
       height: 60px;
       color: #fff;
       font-size: 1.2em;
+      border: none;
       border-radius: 10px;
       background: #874703;
       transition: 0.2s ease-in-out;

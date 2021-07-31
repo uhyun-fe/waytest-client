@@ -150,6 +150,9 @@ const style = createGlobalStyle`
         line-height: normal;
         *overflow: visible;
     }
+    button {
+        cursor: pointer;
+    }
     button::-moz-focus-inner,
     input::-moz-focus-inner {
         border: 0;

@@ -15,7 +15,7 @@ const Quest = ({ history }) => {
       if (goNext) {
          setTimeout(() => {
             setGoNext(false);
-         }, 500);
+         }, 100);
       }
    }, [goNext]);
 

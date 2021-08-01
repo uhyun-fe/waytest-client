@@ -6,7 +6,7 @@ const AnswerBox = ({ items, select }) => {
    return (
       <View>
          {items.map(({ title, value }) => (
-            <Button key={value} onClick={select}>
+            <Button key={value} onClick={() => select(value)}>
                {title}
             </Button>
          ))}
@@ -45,7 +45,7 @@ AnswerBox.propTypes = {
    items: PropTypes.arrayOf(
       PropTypes.shape({
          title: PropTypes.string.isRequired,
-         value: PropTypes.number.isRequired,
+         value: PropTypes.string.isRequired,
       })
    ).isRequired,
    select: PropTypes.func.isRequired, // 답 선택

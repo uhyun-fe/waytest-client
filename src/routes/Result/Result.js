@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ResultTitle from "../../components/Result/ResultTitle";
 
-const Result = () => {
+const Result = ({ match, history }) => {
    return (
-      <div>
+      <>
          <ResultTitle title={"이런 유형!"} />
-      </div>
+      </>
    );
 };
 

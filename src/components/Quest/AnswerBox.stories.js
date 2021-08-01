@@ -11,8 +11,8 @@ const Template = (args) => <AnswerBox {...args} />;
 export const Default = Template.bind({});
 Default.args = {
    items: [
-      { title: "이렇게 한다.", value: 0 },
-      { title: "저렇게 한다.", value: 1 },
+      { title: "이렇게 한다.", value: "I" },
+      { title: "저렇게 한다.", value: "E" },
    ],
    select: () => alert("선택!"),
 };

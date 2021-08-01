@@ -7,6 +7,7 @@ import ProgressBar from "../../components/Quest/ProgressBar";
 import { questList } from "../../lib/quest";
 
 const Quest = ({ history }) => {
+   const [answer, setAnswer] = useState([...Array(questList.length)]);
    const [count, setCount] = useState(0);
    const [goNext, setGoNext] = useState(true);
 
@@ -18,12 +19,19 @@ const Quest = ({ history }) => {
       }
    }, [goNext]);
 
-   const selectAnswer = () => {
+   useEffect(() => {
+      if (count >= questList.length - 1 && answer[answer.length - 1] !== undefined)
+         history.push({
+            pathname: "/loading",
+            state: { value: answer.join("") },
+         });
+   }, [answer]);
+
+   const selectAnswer = (value) => {
+      setAnswer(answer.map((a, i) => (i === count ? value : a)));
       if (count < questList.length - 1) {
          setCount(count + 1);
          setGoNext(true);
-      } else {
-         history.push("/your_type_is");
       }
    };
 

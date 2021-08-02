@@ -12,9 +12,10 @@ const ResultTitle = ({ title }) => {
 };
 
 const View = styled.div`
+   margin-bottom: 50px;
    text-align: center;
    p {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       color: #666;
    }
    h1 {
@@ -22,6 +23,7 @@ const View = styled.div`
       font-weight: 700;
    }
 `;
+
 ResultTitle.propTypes = {
    title: PropTypes.string.isRequired, // 테스트 결과 유형 타이틀
 };

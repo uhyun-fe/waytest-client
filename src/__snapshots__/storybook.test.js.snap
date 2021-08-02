@@ -1,1277 +1,141 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AnswerButton Default 1`] = `
-<button
-  className="answer-button"
->
-  1번 선택지입니다.
-</button>
-`;
-
-exports[`Storyshots AnswerButtonList Default 1`] = `
+exports[`Storyshots 결과페이지 결과설명 1`] = `
 <div
-  className="answer-button-list"
->
-  <button
-    className="answer-button"
-  >
-    1번 선택지입니다.
-  </button>
-  <button
-    className="answer-button"
-  >
-    2번 선택지입니다.
-  </button>
-</div>
-`;
-
-exports[`Storyshots InboxScreen Default 1`] = `
-<div
-  className="page lists-show"
->
-  <nav>
-    <h1
-      className="title-page"
-    >
-      <span
-        className="title-wrapper"
-      >
-        Taskbox
-      </span>
-    </h1>
-  </nav>
-  <div
-    className="list-item"
-  >
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 3"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 6"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots InboxScreen Error 1`] = `
-<div
-  className="page lists-show"
+  className="sc-gKAaRy gcokxO"
 >
   <div
-    className="wrapper-message"
+    className="img"
   >
-    <span
-      className="icon-face-sad"
-    />
-    <div
-      className="title-message"
-    >
-      Oh no!
-    </div>
-    <div
-      className="subtitle-message"
-    >
-      Something went wrong
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots QuestBox Default 1`] = `
-<div
-  className="quest-box"
->
-  <div
-    className="quest-header"
-  >
-    <h3>
-      Q
-      1
-      .
-    </h3>
-    <span>
-      1
-      /
-      10
-    </span>
-  </div>
-  <div
-    className="quest-content"
-  >
-    <p>
-      첫번째 질문입니다.
-    </p>
     <img
-      alt="quest_image"
+      alt="INFP"
       src="sample_icon1.png"
     />
   </div>
-  <div
-    className="answer-button-list"
-  >
-    <button
-      className="answer-button"
-    >
-      1번 선택지입니다.
-    </button>
-    <button
-      className="answer-button"
-    >
-      2번 선택지입니다.
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots QuestBox Error 1`] = `
-<div
-  className="error-box"
->
-  <img
-    alt="error"
-    src="warning.png"
-  />
-  <h3>
-    죄송합니다
-  </h3>
   <p>
-    "Error Message"
+    "
+    커피 한잔 할래요?
+    "
   </p>
-  <p>
-    테스트를 다시 진행해주세요.
-  </p>
-</div>
-`;
-
-exports[`Storyshots QuestBox Loading 1`] = `
-<div
-  className="loading-box"
->
-  <img
-    alt="loading"
-    src="loading.png"
-  />
-  <h3>
-    로딩중...
-  </h3>
-</div>
-`;
-
-exports[`Storyshots QuestContent Default 1`] = `
-<div
-  className="quest-content"
->
-  <p>
-    첫번째 질문입니다.
-  </p>
-  <img
-    alt="quest_image"
-    src="sample_icon1.png"
-  />
-</div>
-`;
-
-exports[`Storyshots QuestHeader Default 1`] = `
-<div
-  className="quest-header"
->
-  <h3>
-    Q
-    1
-    .
-  </h3>
-  <span>
-    1
-    /
-    10
-  </span>
-</div>
-`;
-
-exports[`Storyshots Task Archived 1`] = `
-<div
-  className="list-item TASK_ARCHIVED"
->
-  <label
-    className="checkbox"
+  <div
+    className="desc"
   >
-    <input
-      defaultChecked={true}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
     <span
-      className="checkbox-custom"
-      onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      type="text"
-      value="Test Task"
-    />
+      className="title"
+    >
+      멋진 
+      아메리카노
+      !
+    </span>
+    <ul>
+      <li>
+        좋은점 1
+      </li>
+      <li>
+        좋은점 2
+      </li>
+      <li>
+        좋은점 3
+      </li>
+    </ul>
   </div>
   <div
-    className="actions"
-    onClick={[Function]}
-  />
-</div>
-`;
-
-exports[`Storyshots Task Default 1`] = `
-<div
-  className="list-item TASK_INBOX"
->
-  <label
-    className="checkbox"
+    className="desc"
   >
-    <input
-      defaultChecked={false}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
     <span
-      className="checkbox-custom"
-      onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      type="text"
-      value="Test Task"
-    />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
-  >
-    <a
-      onClick={[Function]}
+      className="title"
     >
-      <span
-        className="icon-star"
-      />
-    </a>
+      이런건 좀..
+    </span>
+    <ul>
+      <li>
+        별로인점 1
+      </li>
+      <li>
+        별로인점 2
+      </li>
+      <li>
+        별로인점 3
+      </li>
+    </ul>
   </div>
 </div>
 `;
 
-exports[`Storyshots Task Pinned 1`] = `
+exports[`Storyshots 결과페이지 결과타이틀 1`] = `
 <div
-  className="list-item TASK_PINNED"
->
-  <label
-    className="checkbox"
-  >
-    <input
-      defaultChecked={false}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
-      onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      type="text"
-      value="Test Task"
-    />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
-  >
-    <a
-      onClick={[Function]}
-    >
-      <span
-        className="icon-star"
-      />
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-item"
-  >
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 3"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 6"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Empty 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-items"
-  >
-    <div
-      className="wrapper-message"
-    >
-      <span
-        className="icon-check"
-      />
-      <div
-        className="title-message"
-      >
-        You have no tasks
-      </div>
-      <div
-        className="subtitle-message"
-      >
-        Sit back and relax
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Loading 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-item"
-  >
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList With Pinned Tasks 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-item"
-  >
-    <div
-      className="list-item TASK_PINNED"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 6 (pinned)"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 3"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots 결과 유형 타이틀 Default 1`] = `
-<div
-  className="sc-jSFjdj jWBbgL"
+  className="sc-iCoGMd cESuKw"
 >
   <p>
     나의 유형은?
   </p>
   <h1>
-    이런저런 유형!
+    낭만적인 아메리카노
   </h1>
 </div>
 `;
 
-exports[`Storyshots 답안 선택지 Default 1`] = `
+exports[`Storyshots 결과페이지 궁합결과 1`] = `
 <div
-  className="sc-gtsrHT daYkbq"
+  className="sc-fujyAs gEdAaO"
 >
-  <button
-    className="sc-dlnjwi kPOVOs"
-    onClick={[Function]}
-  >
-    이렇게 한다.
-  </button>
-  <button
-    className="sc-dlnjwi kPOVOs"
-    onClick={[Function]}
-  >
-    저렇게 한다.
-  </button>
+  <ul>
+    <li>
+      <p>
+        같이 마실래?
+      </p>
+      <div
+        className="box"
+      >
+        <span>
+          라떼는 말이야 카페라떼
+        </span>
+        <div
+          className="img"
+        >
+          <img
+            alt="라떼는 말이야 카페라떼"
+            src="sample_icon1.png"
+          />
+        </div>
+      </div>
+    </li>
+    <li>
+      <p>
+        따로 마시자..
+      </p>
+      <div
+        className="box"
+      >
+        <span>
+          상냥한 유자차
+        </span>
+        <div
+          className="img"
+        >
+          <img
+            alt="상냥한 유자차"
+            src="sample_icon1.png"
+          />
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>
 `;
 
 exports[`Storyshots 로딩페이지 Default 1`] = `
 <div
-  className="sc-gtsrHT gZGCWa"
+  className="sc-gtsrHT cLodqc"
 >
-  <img
-    alt="loading"
-    src="loading.gif"
-  />
+  <div
+    className="img"
+  >
+    <img
+      alt="loading"
+      src="loading.gif"
+    />
+  </div>
   <h2>
     유형 분석중...
   </h2>
@@ -1300,9 +164,28 @@ exports[`Storyshots 인트로페이지 Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots 진행상황 BAR Default 1`] = `
+exports[`Storyshots 질문페이지 답안선택영역 1`] = `
 <div
-  className="sc-hKFxyN YJiHi"
+  className="sc-hKFxyN cdoteG"
+>
+  <button
+    className="sc-eCApnc gAREIc"
+    onClick={[Function]}
+  >
+    이렇게 한다.
+  </button>
+  <button
+    className="sc-eCApnc gAREIc"
+    onClick={[Function]}
+  >
+    저렇게 한다.
+  </button>
+</div>
+`;
+
+exports[`Storyshots 질문페이지 진행상황바 1`] = `
+<div
+  className="sc-jSFjdj iyiLtb"
 >
   <span
     className="text"
@@ -1324,9 +207,9 @@ exports[`Storyshots 진행상황 BAR Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots 질문 타이틀 Default 1`] = `
+exports[`Storyshots 질문페이지 질문텍스트 1`] = `
 <div
-  className="sc-eCApnc goQVIz"
+  className="sc-dlnjwi hBOZZn"
 >
   <p>
     Q

@@ -7,6 +7,13 @@ import kakaoImg from "../../assets/images/kakao.png";
 import urlImg from "../../assets/images/url.png";
 
 const ResultLink = ({ start_link }) => {
+   // url 복사 버튼 클릭 이벤트
+   function copyUrl() {
+      navigator.clipboard.writeText(document.URL).then(() => {
+         alert("복사되었습니다.");
+      });
+   }
+
    return (
       <View>
          <span className="share_title">결과 공유하기</span>
@@ -14,7 +21,7 @@ const ResultLink = ({ start_link }) => {
             <button className="kakao">
                <img src={kakaoImg} alt="share with kakaotalk" />
             </button>
-            <button className="url">
+            <button className="url" onClick={copyUrl}>
                <img src={urlImg} alt="share with url" />
             </button>
          </div>

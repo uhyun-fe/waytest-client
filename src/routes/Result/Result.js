@@ -9,7 +9,8 @@ import ResultLink from "../../components/Result/ResultLink";
 import sample from "../../assets/images/sample_icon1.png";
 
 const Result = ({ match, history }) => {
-   const [mbti, setMbti] = useState(match.params.type);
+   const [mbti] = useState(match.params.type);
+
    return (
       <View>
          <ResultTitle title={"낭만적인 아메리카노"} />

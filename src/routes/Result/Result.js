@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
+import Alert from "../../components/Result/Alert";
 import ResultTitle from "../../components/Result/ResultTitle";
 import ResultDesc from "../../components/Result/ResultDesc";
 import ResultChemi from "../../components/Result/ResultChemi";
@@ -10,9 +11,26 @@ import sample from "../../assets/images/sample_icon1.png";
 
 const Result = ({ match, history }) => {
    const [mbti] = useState(match.params.type);
+   const [isCopied, setIsCopied] = useState(false);
+
+   useEffect(() => {
+      if (isCopied) {
+         setTimeout(() => {
+            setIsCopied(false);
+         }, 2000);
+      }
+   }, [isCopied]);
+
+   // url 복사 버튼 클릭 이벤트
+   function copyUrl() {
+      navigator.clipboard.writeText(document.URL).then(() => {
+         setIsCopied(true);
+      });
+   }
 
    return (
       <View>
+         <Alert is_copied={isCopied} />
          <ResultTitle title={"낭만적인 아메리카노"} />
          <ResultDesc
             type={{
@@ -29,7 +47,7 @@ const Result = ({ match, history }) => {
             }}
          />
          <ResultChemi {...{ best: { name: "무슨무슨 라떼", img_url: sample }, worst: { name: "상냥한 유자차", img_url: sample } }} />
-         <ResultLink {...{ start_link: "/intro" }} />
+         <ResultLink {...{ start_link: "/intro", copyUrl }} />
       </View>
    );
 };

@@ -6,14 +6,7 @@ import styled from "styled-components";
 import kakaoImg from "../../assets/images/kakao.png";
 import urlImg from "../../assets/images/url.png";
 
-const ResultLink = ({ start_link }) => {
-   // url 복사 버튼 클릭 이벤트
-   function copyUrl() {
-      navigator.clipboard.writeText(document.URL).then(() => {
-         alert("복사되었습니다.");
-      });
-   }
-
+const ResultLink = ({ start_link, copyUrl }) => {
    return (
       <View>
          <span className="share_title">결과 공유하기</span>

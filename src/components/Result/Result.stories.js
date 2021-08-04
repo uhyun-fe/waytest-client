@@ -1,5 +1,6 @@
 import React from "react";
 
+import Alert from "./Alert";
 import ResultTitle from "./ResultTitle";
 import ResultDesc from "./ResultDesc";
 import ResultChemi from "./ResultChemi";
@@ -10,9 +11,15 @@ export default {
    title: "결과페이지",
 };
 
+const AlertTemplate = (args) => <Alert {...args} />;
 const TitleTemplate = (args) => <ResultTitle {...args} />;
 const DescTemplate = (args) => <ResultDesc {...args} />;
 const ChemiTemplate = (args) => <ResultChemi {...args} />;
+
+export const 상단알림창 = AlertTemplate.bind({});
+상단알림창.args = {
+   is_copied: true,
+};
 
 export const 결과타이틀 = TitleTemplate.bind({});
 결과타이틀.args = {

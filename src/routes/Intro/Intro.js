@@ -1,8 +1,8 @@
 import React from "react";
 
+import ReactHelmet from "../../components/Others/ReactHelmet";
 import IntroPage from "../../components/Intro/IntroPage";
 import sample from "../../assets/images/sample_icon1.png";
-import { Helmet } from "react-helmet";
 
 import thumb from "../../assets/images/waytest_logo.png";
 
@@ -16,13 +16,8 @@ const Intro = ({ history }) => {
 
    return (
       <>
-         <Helmet
-            title={"당신의 커피 유형은?"}
-            meta={[
-               { property: "og:title", content: "당신의 커피 유형은?" },
-               { property: "og:description", content: `커피 유형 MBTI 테스트` },
-               { property: "og:image", content: { thumb } },
-            ]}
+         <ReactHelmet
+            {...{ title: "당신의 커피 유형은?", description: "커피 유형 테스트 시작하기", keywords: "mbti, coffee, test", favicon: thumb }}
          />
          <IntroPage {...data} />
       </>

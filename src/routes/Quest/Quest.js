@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
+import ReactHelmet from "../../components/Others/ReactHelmet";
 import QuestTitle from "../../components/Quest/QuestTitle";
 import AnswerBox from "../../components/Quest/AnswerBox";
 import ProgressBar from "../../components/Quest/ProgressBar";
@@ -40,14 +40,7 @@ const Quest = ({ history }) => {
 
    return (
       <View>
-         <Helmet
-            title="당신의 커피 유형은?"
-            meta={[
-               { property: "og:title", content: "당신의 커피 유형은?" },
-               { property: "og:description", content: "커피 유형 MBTI 테스트 질문" },
-               { property: "og:image", content: { sample } },
-            ]}
-         />
+         <ReactHelmet {...{ title: "당신의 커피 유형은?", description: "커피 유형 테스트 질문", keywords: "mbti, coffee, test", favicon: sample }} />
          <TitleListSection>
             <ul style={{ width: questList.length * 100 + "%", left: -100 * count + "%" }}>
                {questList.map(({ id, title }) => (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
+import ReactHelmet from "../../components/Others/ReactHelmet";
 import Alert from "../../components/Result/Alert";
 import ResultTitle from "../../components/Result/ResultTitle";
 import ResultDesc from "../../components/Result/ResultDesc";
@@ -31,13 +31,8 @@ const Result = ({ match, history }) => {
 
    return (
       <View>
-         <Helmet
-            title={`당신의 유형은 ? 낭만적인 아메리카노 ${mbti}`}
-            meta={[
-               { property: "og:title", content: `낭만적인 아메리카노 ${mbti}` },
-               { property: "og:description", content: `커피 유형 테스트 결과` },
-               { property: "og:image", content: { sample } },
-            ]}
+         <ReactHelmet
+            {...{ title: `낭만적인 아메리카노 : ${mbti}`, description: "커피 유형 테스트 결과", keywords: "mbti, coffee, test", favicon: sample }}
          />
          <Alert is_copied={isCopied} />
          <ResultTitle title={"낭만적인 아메리카노"} />

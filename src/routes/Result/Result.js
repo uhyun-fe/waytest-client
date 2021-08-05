@@ -15,6 +15,11 @@ const Result = ({ match, history }) => {
    const [isCopied, setIsCopied] = useState(false);
 
    useEffect(() => {
+      window.Kakao.init(process.env.REACT_APP_KAKAO_KEY);
+      window.Kakao.isInitialized();
+   }, []);
+
+   useEffect(() => {
       if (isCopied) {
          setTimeout(() => {
             setIsCopied(false);
@@ -26,6 +31,22 @@ const Result = ({ match, history }) => {
    function copyUrl() {
       navigator.clipboard.writeText(document.URL).then(() => {
          setIsCopied(true);
+      });
+   }
+
+   // 카카오 공유 버튼 생성
+   function shareKaKao() {
+      window.Kakao.Link.sendDefault({
+         objectType: "feed",
+         content: {
+            title: "당신의 커피 유형은?",
+            description: "#커피 #MBTI #유형테스트",
+            imageUrl: "https://image.flaticon.com/icons/png/512/3127/3127450.png",
+            link: {
+               mobileWebUrl: document.URL,
+               webUrl: document.URL,
+            },
+         },
       });
    }
 
@@ -51,7 +72,7 @@ const Result = ({ match, history }) => {
             }}
          />
          <ResultChemi {...{ best: { name: "무슨무슨 라떼", img_url: sample }, worst: { name: "상냥한 유자차", img_url: sample } }} />
-         <ResultLink {...{ start_link: "/intro", copyUrl }} />
+         <ResultLink {...{ start_link: "/intro", copyUrl, shareKaKao }} />
       </View>
    );
 };

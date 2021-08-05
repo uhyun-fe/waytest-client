@@ -63,6 +63,16 @@ npm install react-helmet
 
 참고 : https://jeonghwan-kim.github.io/dev/2020/08/15/react-helmet.html
 
+---
+
+## Netlify 배포
+
+배포 후 url을 redirect 하면 404 에러가 발생하는 이슈
+
+-  public/\_redirects 파일을 생성하여 해결 (참고 : https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/)
+
+---
+
 ## 새로 알게된 것
 
 #### 새로 알게된 HTML 태그

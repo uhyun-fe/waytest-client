@@ -53,6 +53,16 @@ React Testing with JEST
 
 ---
 
+## Meta tags 변경
+
+`react-helmet` 사용
+
+```
+npm install react-helmet
+```
+
+참고 : https://jeonghwan-kim.github.io/dev/2020/08/15/react-helmet.html
+
 ## 새로 알게된 것
 
 #### 새로 알게된 HTML 태그

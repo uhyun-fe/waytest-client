@@ -46,6 +46,7 @@ const View = styled.div`
          width: 50px;
          height: 50px;
          border-radius: 50%;
+         background: #eeeeee;
          &:not(:last-child) {
             margin-right: 20px;
          }

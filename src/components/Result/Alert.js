@@ -9,7 +9,7 @@ const Alert = ({ is_copied }) => {
       <View className={is_copied ? "display" : "none"}>
          <div className="alert">
             <img src={check} alt="check!" />
-            <span>클립보드에 현재 url이 복사되었습니다.</span>
+            <span>클립보드에 url이 복사되었습니다.</span>
          </div>
       </View>
    );

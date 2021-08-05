@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import QuestTitle from "../../components/Quest/QuestTitle";
 import AnswerBox from "../../components/Quest/AnswerBox";
 import ProgressBar from "../../components/Quest/ProgressBar";
 import { questList } from "../../lib/quest";
+
+import sample from "../../assets/images/checked.png";
 
 const Quest = ({ history }) => {
    const [answer, setAnswer] = useState([...Array(questList.length)]);
@@ -37,6 +40,14 @@ const Quest = ({ history }) => {
 
    return (
       <View>
+         <Helmet
+            title="당신의 커피 유형은?"
+            meta={[
+               { property: "og:title", content: "당신의 커피 유형은?" },
+               { property: "og:description", content: "커피 유형 MBTI 테스트 질문" },
+               { property: "og:image", content: { sample } },
+            ]}
+         />
          <TitleListSection>
             <ul style={{ width: questList.length * 100 + "%", left: -100 * count + "%" }}>
                {questList.map(({ id, title }) => (

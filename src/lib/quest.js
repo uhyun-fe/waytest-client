@@ -1,98 +1,98 @@
 export const questList = [
    {
       id: 1,
-      title: "I vs E",
+      title: "나에게 \n커피 브레이크는?",
       items: [
-         { title: "I", value: "I" },
-         { title: "E", value: "E" },
+         { title: "친구들과 수다 떨며 \n스트레스를 푸는 시간", value: "E" },
+         { title: "조용히 혼자만의 시간을 가지며 \n생각을 정리하는 시간", value: "I" },
       ],
    },
    {
       id: 2,
-      title: "S vs N",
+      title: "친구와 스터디카페 룸을 \n예약하려고 한다.",
       items: [
-         { title: "N", value: "N" },
-         { title: "S", value: "S" },
+         { title: "여긴 후기랑 평점이 좋군. \n위치랑 가격도 완벽해!", value: "S" },
+         { title: "분위기도 좋아보이고 \n커피도 맛있어보이네 굿!", value: "N" },
       ],
    },
    {
       id: 3,
-      title: "F vs T",
+      title: "친구가 요즘 유행하는 \n커피를 만들어 줬다.",
       items: [
-         { title: "F", value: "F" },
-         { title: "T", value: "T" },
+         { title: "와 잘 만들었네! \n레시피 조금 바꾼거야? 맛있다~", value: "T" },
+         { title: "나 주려고 만든거야?? \n감동이야ㅠ 고마워!", value: "F" },
       ],
    },
    {
       id: 4,
-      title: "P vs J",
+      title: "카페에서 친구와 \n휴가 계획을 짜기로 했다.",
       items: [
-         { title: "P", value: "P" },
-         { title: "J", value: "J" },
+         { title: '"이 날은 먹방데이~~" \n대충 테마만 생각해둔다.', value: "P" },
+         { title: '"7시 30분까지는 도착해야지!" \n구체적으로 짠다.', value: "J" },
       ],
    },
    {
       id: 5,
-      title: "I vs E",
+      title: "카페에서 \n정말 맛있는 커피를 \n마셨을 때 나는?",
       items: [
-         { title: "I", value: "I" },
-         { title: "E", value: "E" },
+         { title: '"여러분 이 커피 좀 보세요!!!" \n동네방네 인생커피라며 추천한다.', value: "E" },
+         { title: "'오~ 제법 하는데~?' \n혼자 생각한다.", value: "I" },
       ],
    },
    {
       id: 6,
-      title: "S vs N",
+      title: "친구가 내가 시킨 커피는 \n무슨 맛인지 물어본다.",
       items: [
-         { title: "N", value: "N" },
-         { title: "S", value: "S" },
+         { title: "이거? \n카페인이 몸 전체에 휘감기는 맛이야.. 오늘은 잠 못자겠는걸^^", value: "N" },
+         { title: "이거? \n..아메리카노맛?", value: "S" },
       ],
    },
    {
       id: 7,
-      title: "F vs T",
+      title: "요즘 고민이 많아 \n힘들다고 하는 친구에게",
       items: [
-         { title: "F", value: "F" },
-         { title: "T", value: "T" },
+         { title: "많이 힘들지ㅠㅜ \n진짜 고생이 많아..", value: "F" },
+         { title: "힘들지ㅠ 근데 그 상황에서는 \n이렇게 하는게 더 좋지 않아?", value: "T" },
       ],
    },
    {
       id: 8,
-      title: "P vs J",
+      title: "멀리있는 카페에서 만나기로 했다. 늦지 않기 위해 당신이 선택한 방법은?",
       items: [
-         { title: "P", value: "P" },
-         { title: "J", value: "J" },
+         { title: "최단경로를 알아보고 빠른 환승까지 고려한 최적의 시간에 맞춰 출발한다.", value: "J" },
+         { title: "대충 1시간쯤 걸릴거같으니까 1시간 10분전에 출발한다.", value: "P" },
       ],
    },
    {
       id: 9,
-      title: "I vs E",
+      title: "친구와의 약속이 \n취소되었다!",
       items: [
-         { title: "I", value: "I" },
-         { title: "E", value: "E" },
+         { title: "집으로 돌아가 \n혼자 뒹굴거릴 생각에 신난다!", value: "I" },
+         { title: "다른 친구에게 빠르게 연락한다.", value: "E" },
       ],
    },
    {
       id: 10,
-      title: "S vs N",
+      title: "카페 자리에 앉았다. \n지금 드는 생각은?",
       items: [
-         { title: "N", value: "N" },
-         { title: "S", value: "S" },
+         { title: "저번에 시켰던 음료니까 오늘도 맛있겠지? 먹어볼까~", value: "S" },
+         { title: "저기 뒷문으로 강도가 들어와서 칼을 휘두르면 오른쪽으로 피한다음에..", value: "N" },
       ],
    },
    {
       id: 11,
-      title: "F vs T",
+      title: "오늘 중요한 일이 있다던 애인이 잘 안됐다며 연락했다.",
       items: [
-         { title: "F", value: "F" },
-         { title: "T", value: "T" },
+         { title: "그래도 고생했어 힘들었지ㅠ \n오늘 맛있는거 먹을까?", value: "F" },
+         { title: "왜 잘 안됐는데? 그럼 다음에는 이렇게 해보면 어때?", value: "T" },
       ],
    },
    {
       id: 12,
-      title: "P vs J",
+      title: "커피를 시키고 앉아서 \n오늘의 할일을 \n생각해보기로 했다.",
       items: [
-         { title: "P", value: "P" },
-         { title: "J", value: "J" },
+         { title: "일의 우선순위를 고려해 시간단위로 스케쥴을 짠다.", value: "J" },
+         { title: "일단 이거부터 하고 나머지는 이따가 생각해보도록 한다.", value: "P" },
       ],
    },
 ];

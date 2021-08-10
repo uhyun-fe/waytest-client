@@ -7,7 +7,12 @@ const AnswerBox = ({ items, select }) => {
       <View>
          {items.map(({ title, value }) => (
             <Button key={value} onClick={() => select(value)}>
-               {title}
+               {title.split("\n").map((t, i) => (
+                  <span key={i}>
+                     {t}
+                     <br />
+                  </span>
+               ))}
             </Button>
          ))}
       </View>
@@ -22,12 +27,13 @@ const View = styled.div`
 
 const Button = styled.button`
    display: flex;
-   align-items: center;
-   padding-top: 2px;
-   padding-left: 20px;
+   flex-direction: column;
+   justify-content: center;
+   padding: 2px 20px 0;
    width: 100%;
    height: 100px;
    font-size: 1.1em;
+   text-align: left;
    border: none;
    border-radius: 10px;
    background: #f2f2f2;

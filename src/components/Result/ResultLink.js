@@ -9,7 +9,7 @@ import urlImg from "../../assets/images/url.png";
 const ResultLink = ({ start_link, copyUrl, shareKaKao }) => {
    return (
       <View>
-         <span className="share_title">테스트 공유하기</span>
+         <span className="share_title">결과 공유하기</span>
          <div className="icons">
             <button className="kakao" id="kakao-link-btn" onClick={shareKaKao}>
                <img src={kakaoImg} alt="share with kakaotalk" />

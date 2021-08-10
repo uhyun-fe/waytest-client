@@ -19,7 +19,7 @@ export const questList = [
       id: 3,
       title: "친구가 요즘 유행하는 \n커피를 만들어 줬다.",
       items: [
-         { title: "와 잘 만들었네! \n레시피 조금 바꾼거야? 맛있다~", value: "T" },
+         { title: "와~ 어떻게 만든거야? \n맛있다!", value: "T" },
          { title: "나 주려고 만든거야?? \n감동이야ㅠ 고마워!", value: "F" },
       ],
    },
@@ -52,7 +52,7 @@ export const questList = [
       title: "요즘 고민이 많아 \n힘들다고 하는 친구에게",
       items: [
          { title: "많이 힘들지ㅠㅜ \n진짜 고생이 많아..", value: "F" },
-         { title: "힘들지ㅠ 근데 그 상황에서는 \n이렇게 하는게 더 좋지 않아?", value: "T" },
+         { title: "근데 그 상황에서는 \n이렇게 하는게 더 좋지 않아?", value: "T" },
       ],
    },
    {

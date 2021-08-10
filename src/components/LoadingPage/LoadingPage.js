@@ -19,6 +19,7 @@ const View = styled.div`
    padding-top: 100px;
    .img {
       width: 100%;
+      height: 200px;
       margin-bottom: 30px;
    }
    img {

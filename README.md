@@ -4,7 +4,7 @@ https://waytest.netlify.app/
 
 waytest는 "who are you test"입니다.
 
--  배포 : netlify https://velog.io/@feyouhyun0957/react-netlify-%EB%B0%B0%ED%8F%AC
+배포 : netlify ([배포관련 정리](https://velog.io/@feyouhyun0957/react-netlify-%EB%B0%B0%ED%8F%AC))
 
 ---
 
@@ -20,14 +20,22 @@ waytest는 "who are you test"입니다.
    -  AnswerBox : 질문별 답안선택 영역
    -  ProgressBar : 테스트 진행상황 표시 영역
 
-3. Result
+3. Loading Page
+
+   -  LoadingPage : 유형 분석중 로딩화면
+
+4. Result
    -  ResultTitle : 결과 유형 타이틀 영역
+   -  ResultDesc : 결과 유형 설명 영역
+   -  ResultChemi : 결과 유형과 궁합인 유형 알아보기 영역
+   -  ResultLink : 결과 공유하기 영역
+   -  Alert : url 공유 시, 클립보드 복사 완료 알림창
 
 ---
 
 ## Storybook
 
-waytest-storybook https://www.chromatic.com/library?appId=60ffba1633991c0039ce5588
+배포 : [waytest-storybook](https://www.chromatic.com/library?appId=60ffba1633991c0039ce5588)
 
 @storybook/addon-storyshots 설치 시 명령문
 
@@ -41,7 +49,7 @@ storybook build 시 명령문
 npx chromatic --project-token <your-project-token>
 ```
 
-참고 문서 : https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
+[참고 문서](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/)
 
 ---
 
@@ -49,7 +57,7 @@ npx chromatic --project-token <your-project-token>
 
 React Testing with JEST
 
-참고 튜토리얼 : https://www.youtube.com/watch?v=ML5egqL3YFE&t=162s
+[참고 튜토리얼](https://www.youtube.com/watch?v=ML5egqL3YFE&t=162s)
 
 ---
 
@@ -61,7 +69,7 @@ React Testing with JEST
 npm install react-helmet
 ```
 
-참고 : https://jeonghwan-kim.github.io/dev/2020/08/15/react-helmet.html
+[참고 글](https://jeonghwan-kim.github.io/dev/2020/08/15/react-helmet.html)
 
 ---
 
@@ -69,7 +77,7 @@ npm install react-helmet
 
 배포 후 url을 redirect 하면 404 에러가 발생하는 이슈
 
--  public/\_redirects 파일을 생성하여 해결 (참고 : https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/)
+-  public/\_redirects 파일을 생성하여 해결 ([참고 글](https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/))
 
 ---
 

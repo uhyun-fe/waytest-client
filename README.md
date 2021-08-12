@@ -4,7 +4,7 @@ https://waytest.netlify.app/
 
 waytest는 "who are you test"입니다.
 
-배포 : netlify ([배포관련 정리](https://velog.io/@feyouhyun0957/react-netlify-%EB%B0%B0%ED%8F%AC))
+배포 : netlify [배포관련 정리](https://velog.io/@feyouhyun0957/react-netlify-%EB%B0%B0%ED%8F%AC)
 
 ---
 
@@ -77,7 +77,9 @@ npm install react-helmet
 
 배포 후 url을 redirect 하면 404 에러가 발생하는 이슈
 
--  public/\_redirects 파일을 생성하여 해결 ([참고 글](https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/))
+-  public/\_redirects 파일을 생성하여 해결
+
+-  [참고 글](https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/)
 
 ---
 

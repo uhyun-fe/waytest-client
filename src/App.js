@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 import GlobalStyles from "./global/styles";
 import { Intro, Quest, Result, Loading } from "./routes";
 
 function App() {
+   useEffect(() => {
+      window.Kakao.init(process.env.REACT_APP_KAKAO_KEY);
+      window.Kakao.isInitialized();
+   }, []);
+
    return (
       <>
          <GlobalStyles />

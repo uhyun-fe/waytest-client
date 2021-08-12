@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const ResultChemi = ({ best: { name: b_name, img_url: b_img_url }, worst: { name: w_name, img_url: w_img_url } }) => {
+const ResultChemi = ({ best: { title: b_name, img_url: b_img_url }, worst: { title: w_name, img_url: w_img_url } }) => {
    return (
       <View>
          <ul>
@@ -73,11 +73,11 @@ const View = styled.div`
 
 ResultChemi.propTypes = {
    best: PropTypes.shape({
-      name: PropTypes.string.isRequired, // 베스트 타입 타이틀
+      title: PropTypes.string.isRequired, // 베스트 타입 타이틀
       img_url: PropTypes.string.isRequired, // 베스트 타입 이미지
    }),
    worst: PropTypes.shape({
-      name: PropTypes.string.isRequired, // 워스트 타입 타이틀
+      title: PropTypes.string.isRequired, // 워스트 타입 타이틀
       img_url: PropTypes.string.isRequired, // 워스트 타입 이미지
    }),
 };

@@ -4,14 +4,14 @@ import ReactHelmet from "../../components/Others/ReactHelmet";
 import IntroPage from "../../components/Intro/IntroPage";
 import { introData } from "../../lib/intro";
 
-import sample from "../../assets/images/sample_icon1.png";
+import mainImage from "../../assets/images/main.jpg";
 import thumb from "../../assets/images/waytest_logo.png";
 
 const Intro = ({ history }) => {
    const data = {
       title: introData.title,
       desc: introData.desc,
-      img_url: sample,
+      img_url: mainImage,
       startFunc: () => history.push("/test"),
    };
 

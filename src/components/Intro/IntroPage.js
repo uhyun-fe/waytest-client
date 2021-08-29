@@ -7,7 +7,9 @@ const IntroPage = ({ title, desc, img_url, startFunc }) => {
       <View>
          <h1>{title}</h1>
          <p>{desc}</p>
-         <img src={img_url} alt={title} />
+         <div className="img">
+            <img src={img_url} alt={title} />
+         </div>
          <button onClick={startFunc}>테스트 시작</button>
       </View>
    );
@@ -27,9 +29,13 @@ const View = styled.div`
       color: #666;
       font-size: 1.1em;
    }
-   img {
+   .img {
       margin: 50px 0;
       width: 50%;
+      min-height: 280px;
+      img {
+         width: 100%;
+      }
    }
    button {
       padding-top: 2px;

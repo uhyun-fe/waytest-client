@@ -18,7 +18,7 @@ const ResultDesc = ({ type: { name, mbti, img_url, point_wording, good_list, bad
             </ul>
          </div>
          <div className="desc">
-            <span className="title">이런건 좀..</span>
+            <span className="title">이런면도 있어요</span>
             <ul>
                {bad_list.map((bad, i) => (
                   <li key={i}>{bad}</li>

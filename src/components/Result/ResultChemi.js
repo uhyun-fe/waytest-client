@@ -56,28 +56,31 @@ const View = styled.div`
             color: #874703;
             font-weight: 700;
          }
-         .box {
-            padding: 20px 10px;
-            text-align: center;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px #afafaf;
-            span {
-               margin-bottom: 20px;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               height: 50px;
-               color: #333;
-               font-size: 1.1em;
-               font-weight: 700;
-            }
-            .img {
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               min-height: 110px;
-               img {
-                  width: 80%;
+         a {
+            text-decoration: none;
+            .box {
+               padding: 20px 10px;
+               text-align: center;
+               border-radius: 5px;
+               box-shadow: 2px 2px 5px #afafaf;
+               span {
+                  margin-bottom: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 50px;
+                  color: #333;
+                  font-size: 1.1em;
+                  font-weight: 700;
+               }
+               .img {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  min-height: 110px;
+                  img {
+                     width: 80%;
+                  }
                }
             }
          }

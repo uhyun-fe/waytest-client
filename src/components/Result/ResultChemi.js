@@ -1,28 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const ResultChemi = ({ best: { title: b_name, img_url: b_img_url }, worst: { title: w_name, img_url: w_img_url } }) => {
+const ResultChemi = ({
+   best: { title: b_name, img_url: b_img_url, mbti: b_mbti },
+   worst: { title: w_name, img_url: w_img_url, mbti: w_mbti },
+   match,
+}) => {
    return (
       <View>
          <ul>
             <li>
                <p>같이 마실래?</p>
-               <div className="box">
-                  <span>{b_name}</span>
-                  <div className="img">
-                     <img src={b_img_url} alt={b_name} />
+               <a href={`/${match.path.split("/")[1]}/${b_mbti}`}>
+                  <div className="box">
+                     <span>{b_name}</span>
+                     <div className="img">
+                        <img src={b_img_url} alt={b_name} />
+                     </div>
                   </div>
-               </div>
+               </a>
             </li>
             <li>
                <p>따로 마시자..</p>
-               <div className="box">
-                  <span>{w_name}</span>
-                  <div className="img">
-                     <img src={w_img_url} alt={w_name} />
+               <a href={`/${match.path.split("/")[1]}/${w_mbti}`}>
+                  <div className="box">
+                     <span>{w_name}</span>
+                     <div className="img">
+                        <img src={w_img_url} alt={w_name} />
+                     </div>
                   </div>
-               </div>
+               </a>
             </li>
          </ul>
       </View>
@@ -38,6 +47,7 @@ const View = styled.div`
       display: flex;
       list-style: none;
       li {
+         width: 100%;
          &:first-child {
             margin-right: 10px;
          }
@@ -62,6 +72,10 @@ const View = styled.div`
                font-weight: 700;
             }
             .img {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-height: 110px;
                img {
                   width: 80%;
                }

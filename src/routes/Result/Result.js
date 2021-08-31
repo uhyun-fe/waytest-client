@@ -61,7 +61,13 @@ const Result = ({ match }) => {
                bad_list: coffee.bad_list,
             }}
          />
-         <ResultChemi {...{ best: result_obj[coffee.best_chemi], worst: result_obj[coffee.worst_chemi] }} />
+         <ResultChemi
+            {...{
+               best: { ...result_obj[coffee.best_chemi], mbti: coffee.best_chemi },
+               worst: { ...result_obj[coffee.worst_chemi], mbti: coffee.worst_chemi },
+               match,
+            }}
+         />
          <ResultLink {...{ start_link: "/intro", copyUrl, shareKaKao }} />
       </View>
    );

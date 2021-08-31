@@ -1,20 +1,26 @@
 import americano from "../assets/images/coffee/americano.png";
-import bubbletea from "../assets/images/coffee/bubbletea.png";
+import apogato from "../assets/images/coffee/apogato.png";
+import aspresso from "../assets/images/coffee/aspresso.png";
+import black_sesame from "../assets/images/coffee/black_sesame.png";
+import bubble from "../assets/images/coffee/bubble.png";
+import carrot from "../assets/images/coffee/carrot.png";
+import choco from "../assets/images/coffee/choco.png";
+import dalgona from "../assets/images/coffee/dalgona.png";
 import greentea from "../assets/images/coffee/greentea.png";
-import iceamericano from "../assets/images/coffee/iceamericano.png";
-import icetea from "../assets/images/coffee/icetea.png";
-import jamongtea from "../assets/images/coffee/jamongtea.png";
-import latte from "../assets/images/coffee/latte.png";
-import lemontea from "../assets/images/coffee/lemontea.png";
-import prapchino from "../assets/images/coffee/prapchino.png";
-import smoothie from "../assets/images/coffee/smoothie.png";
+import hubtea from "../assets/images/coffee/hubtea.png";
+import lemon from "../assets/images/coffee/lemon.png";
+import mango from "../assets/images/coffee/mango.png";
+import mint from "../assets/images/coffee/mint.png";
+import strawberry from "../assets/images/coffee/strawberry.png";
+import ujacha from "../assets/images/coffee/ujacha.png";
+import vanilla from "../assets/images/coffee/vanilla.png";
 
 export const result_obj = {
    INFP: {
       title: "아포가토",
       coffee: "아포가토",
       point_wording: "이상적인 세상을 만들어가고 싶어!",
-      img_url: lemontea,
+      img_url: apogato,
       good_list: [
          "공감능력이 뛰어나고 배려심이 좋아요",
          "내 공간 안으로 들어온 친구나 연인에게 모든 것을 오픈하는 편이에요",
@@ -33,7 +39,7 @@ export const result_obj = {
       title: "흑임자라떼",
       coffee: "흑임자라떼",
       point_wording: "내가 좀 따뜻한 사람이야~",
-      img_url: jamongtea,
+      img_url: black_sesame,
       good_list: [
          "다른사람에게 공감을 잘해서 상대방 기분에 금방 이입할 수 있어요",
          "남들에게 착하다는 소리를 많이 들어요",
@@ -52,7 +58,7 @@ export const result_obj = {
       title: "버블티",
       coffee: "버블티",
       point_wording: "제일 잘하는거? 방탈출이요ㅎ",
-      img_url: greentea,
+      img_url: bubble,
       good_list: [
          "상상력이 풍부하고 분석도 잘하는 편이에요",
          "자기 주관이 뚜렷하고 호불호가 확실해요",
@@ -72,7 +78,7 @@ export const result_obj = {
       title: "민트초코칩 프라푸치노",
       coffee: "민트초코칩 프라푸치노",
       point_wording: "사실 내가 최고인거같아!",
-      img_url: latte,
+      img_url: mint,
       good_list: [
          "자신의 능력에 확고한 믿음이 있는 자존감 높은 타입이에요. 내가 너무 좋아 짱이야!",
          "개인주의 성향이 강하고 독립적인 타입으로 혼자 노는것도 즐거워요!",
@@ -91,7 +97,7 @@ export const result_obj = {
       title: "유기농 당근주스",
       coffee: "유기농 당근주스",
       point_wording: "칭찬해주는 사람 너무 좋아!",
-      img_url: americano,
+      img_url: carrot,
       good_list: [
          "순둥이 그 자체! 쉽게 거절하지 못하고 양보도 곧 잘 하는 타입이에요",
          "어떤사람을 만나도 원만하게 잘지내요",
@@ -109,7 +115,7 @@ export const result_obj = {
       title: "핸드메이드 유자차",
       coffee: "핸드메이드 유자차",
       point_wording: "거절? 거절이 뭐죠?ㅎㅎ",
-      img_url: greentea,
+      img_url: ujacha,
       good_list: [
          "책임감 있는 타입이고 질서 있는 환경이 좋아요",
          "다른 사람의 감정을 잘 캐치하고, 공감도 잘 해줘요",
@@ -124,7 +130,7 @@ export const result_obj = {
       title: "에스프레소",
       coffee: "에스프레소",
       point_wording: "논리적이며 적응력이 뛰어난 사람!",
-      img_url: bubbletea,
+      img_url: aspresso,
       good_list: [
          "적게 일하고 많이 버는게 인생의 목표에요",
          "한 번 꽂히면 질릴 때까지 물고 늘어져요. (이 영역의 일인자는 나였으면ㅎ)",
@@ -138,7 +144,7 @@ export const result_obj = {
       title: "허브티",
       coffee: "허브티",
       point_wording: "책임감 있는 사람, 약속 잘 지키는 사람이 좋아!",
-      img_url: smoothie,
+      img_url: hubtea,
       good_list: [
          "맡은 일은 신중하고 책임감있게 처리해요",
          "쉽게 흥분하지 않는 늘 차분한 성격이에요",
@@ -157,7 +163,7 @@ export const result_obj = {
       title: "망고 요거트 쉐이크",
       coffee: "망고 요거트 쉐이크",
       point_wording: "새로운 친구 좋아!><",
-      img_url: iceamericano,
+      img_url: mango,
       good_list: ["혼자보단 함께하는게 좋아요! 새로운 친구 좋아!", "표현력이 풍부하고 리액션 최고에요", "생각보다 속이 깊고 진국이에요"],
       bad_list: ["아이같고 철없어보일 수 있어요", "계획적이기보다는 다소 충동적일 때가 더 많아요", "모임에서 소외되는건 싫어요ㅠ"],
       best_chemi: "INFJ",
@@ -167,7 +173,7 @@ export const result_obj = {
       title: "초코홀릭 초코라떼",
       coffee: "초코홀릭 초코라떼",
       point_wording: "저 같이 리액션 좋은 사람 찾아요~",
-      img_url: prapchino,
+      img_url: choco,
       good_list: ["온화하지만 활기찬 성격이에요", "남에게는 관대하지만 나에게는 엄격해요", "눈치가 빠르고 센스있는 편이에요"],
       bad_list: ["귀가 얇아요", "맘에 안들어도 쉽게 표현하지 않고, 사람들과 싸우는걸 싫어해요", "하지만 화나서 이성을 잃으면 팩트 폭격기로 변해요"],
       best_chemi: "INFP",
@@ -192,7 +198,7 @@ export const result_obj = {
       title: "바닐라라떼",
       coffee: "바닐라라떼",
       point_wording: "매 순간 감정적인 사람은 NO!",
-      img_url: americano,
+      img_url: vanilla,
       good_list: [
          "순수하게 사람들을 궁금해해요",
          "끈기와 책임감이 뛰어나 맡은 일에 항상 최선을 다해요",
@@ -206,7 +212,7 @@ export const result_obj = {
       title: "딸기 딜라이트 요거트 블렌디드",
       coffee: "딸기 딜라이트 요거트 블렌디드",
       point_wording: "우주 최강 오지라퍼!",
-      img_url: latte,
+      img_url: strawberry,
       good_list: [
          "슈퍼인싸! 처음 보는 사람에게 다가가는건 두렵지 않아요",
          "뭐든지 즉흥적으로 하는 일이 제일 재밌어요",
@@ -225,7 +231,7 @@ export const result_obj = {
       title: "그린티 라떼",
       coffee: "그린티 라떼",
       point_wording: "안녕? 내 이름은 평화주의자. 그린티 라떼죠ㅎ",
-      img_url: latte,
+      img_url: greentea,
       good_list: [
          "모두가 행복하고 평화로운 세상이 좋아요",
          "자연스럽게 분위기를 주도하거나 리더 역할을 잘 해내요",
@@ -244,7 +250,7 @@ export const result_obj = {
       title: "레몬에이드",
       coffee: "레몬에이드",
       point_wording: "집착은 싫어요, 제 맘대로 할거에요!",
-      img_url: icetea,
+      img_url: lemon,
       good_list: [
          "개방적인 스타일이라 누구와도 친해질 수 있어요",
          "모임에 절대 빠지지 않는 프로 참석러이자 분위기 메이커에요",
@@ -262,7 +268,7 @@ export const result_obj = {
       title: "1000번 휘저은 달고나 커피",
       coffee: "1000번 휘저은 달고나 커피",
       point_wording: "이성적인 생각 금지? 그거 어떻게 하는건데?",
-      img_url: prapchino,
+      img_url: dalgona,
       good_list: [
          "모든 일을 충실하고 계획적으로 차근차근 해결할 수 있어요",
          "과정보다는 결과가 더 중요해요",

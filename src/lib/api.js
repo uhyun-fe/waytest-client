@@ -1,16 +1,7 @@
-// import axios from "axios";
+import axios from "axios";
 
-// const WAYTEST_SERVER_URI = "http://localhost:5000/api/v1/";
+const WAYTEST_SERVER_URI = "https://waytest-server.herokuapp.com/";
+// const WAYTEST_SERVER_URI = "http://localhost:8095/";
 
-// const api = axios.create({
-//    baseURL: WAYTEST_SERVER_URI,
-//    headers: {
-//       accept: "application/json",
-//       "Content-Type": "multipart/form-data",
-//       "Access-Control-Allow-Origin": "*",
-//    },
-// });
-
-// export const apiQuest = {
-//    getQuestList: () => api.get("restaurants"),
-// };
+export const getVisitCount = () => axios.get(WAYTEST_SERVER_URI);
+export const updateVisitCount = () => axios.put(WAYTEST_SERVER_URI + "count");

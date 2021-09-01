@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const IntroPage = ({ title, desc, img_url, startFunc }) => {
+const IntroPage = ({ title, visit_count, desc, img_url, startFunc }) => {
    return (
       <View>
          <h1>{title}</h1>
@@ -11,6 +11,10 @@ const IntroPage = ({ title, desc, img_url, startFunc }) => {
             <img src={img_url} alt={title} />
          </div>
          <button onClick={startFunc}>테스트 시작</button>
+         <p className="visit_count">
+            <strong>{visit_count.toLocaleString("ko-KR")}</strong>명이 <br />
+            "나와 어울리는 커피"를 알아봤어요!
+         </p>
       </View>
    );
 };
@@ -19,7 +23,7 @@ const View = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding-top: 50px;
+   padding: 30px 0;
    h1 {
       font-size: 2em;
       font-weight: 700;
@@ -39,6 +43,7 @@ const View = styled.div`
    }
    button {
       padding-top: 2px;
+      margin-bottom: 50px;
       width: 70%;
       height: 60px;
       color: #fff;
@@ -49,6 +54,15 @@ const View = styled.div`
       transition: 0.2s ease-in-out;
       &:hover {
          background: #704000;
+      }
+   }
+   .visit_count {
+      word-break: break-all;
+      text-align: center;
+      line-height: 1.5;
+      strong {
+         font-size: 1.5em;
+         font-weight: 700;
       }
    }
 `;

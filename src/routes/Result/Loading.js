@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import LoadingPage from "../../components/LoadingPage/LoadingPage";
+import { updateVisitCount } from "../../lib/api";
 
 const Loading = ({ history, location }) => {
    useEffect(() => {
@@ -19,8 +20,8 @@ const Loading = ({ history, location }) => {
       value = Object.keys(value).map((n) => getMode(value[n]));
 
       setTimeout(() => {
-         history.push(`/your_type_is/${value.join("")}`);
-      }, 3000);
+         updateCount(value.join(""));
+      }, 2000);
    }, []);
 
    function getMode(arr) {
@@ -35,6 +36,16 @@ const Loading = ({ history, location }) => {
          if (countObj[key] > countObj[mode]) mode = key;
       });
       return mode;
+   }
+
+   async function updateCount(value) {
+      try {
+         const { status } = await updateVisitCount();
+      } catch (error) {
+         console.error(error);
+      } finally {
+         history.push(`/your_type_is/${value}`);
+      }
    }
 
    return <LoadingPage />;

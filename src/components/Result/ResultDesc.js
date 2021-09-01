@@ -33,15 +33,19 @@ const View = styled.div`
    margin-bottom: 50px;
    text-align: center;
    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 50px;
       width: 100%;
+      min-height: 260px;
       img {
          width: 250px;
       }
    }
    p {
       margin-bottom: 50px;
-      padding: 0 15%;
+      padding: 0 1%;
       font-size: 1.2em;
       text-align: center;
    }

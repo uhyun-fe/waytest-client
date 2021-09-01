@@ -36,7 +36,7 @@ const View = styled.div`
    .img {
       margin: 50px 0;
       width: 50%;
-      min-height: 280px;
+      min-height: 180px;
       img {
          width: 100%;
       }
